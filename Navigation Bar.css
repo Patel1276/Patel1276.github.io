@@ -1,0 +1,105 @@
+
+
+
+/*NAVIGATION BAR STARTS*/
+.topnav {
+   overflow: hidden;
+   background-color: black;
+   font-family: "Comic Sans MS", sans-serif; /* Font on the Bar*/
+}
+
+/* STYLE FOR THE TEXT OF NAV - BAR (HOME AND LINK) */
+.topnav a {
+    float: left; /* Location of the content on navbar */
+    font-size: 16px;
+    color: lightgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: None;
+    position: center;
+}
+
+.topnav a:hover {
+    color: White;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: green;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* All about text when on dropbtn-(ABOUT) */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: None;
+    outline: None;
+    color: lightgray;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;  /* Will be the above Comic */
+    margin: 0;
+}
+.dropbtn:hover{
+    color: white;
+    font-weight: bold;
+}
+
+/* Content when you hover on About(SPORTS AND PLACE ONES) */
+.dropdown-content {
+    display: None;
+    position: Absolute;
+    background-color: black;
+    min-width: 160px;
+}
+.dropdown-content a {
+    float: None;
+    color: lightgray;
+    padding: 14px 16px;
+    text-decoration: None;
+    display: Block;
+    text-align: left;
+}
+
+/* Shows placement of dropdown when you are on ABOVE-Tab */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Color of active/selected tab */
+.active:not{
+    background-color: midnightblue;
+}
+.active:hover {
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+/*.......... EXTRA KNOWLEDGE - THIS CAN ALSO HAPPEN JUST COLOR NOT BOLD........*/
+
+/*
+
+THIS GIVES COLOR TO 'ABOUT'
+.dropdown:hover {
+    background-color: midnightblue;
+}
+
+GIVES COLOR TO 'HOME' OR 'LINK' WHICH IS UNSELECTED
+.topnav a:hover:not(.active) {
+    background-color: midnightblue;
+}
+
+GIVES COLOR TO DROPDOWN MENU
+.dropdown a:hover:not(.dropbtn) {
+    background-color: green;
+}
+
+ */
